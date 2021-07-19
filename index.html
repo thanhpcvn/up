@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="https://graph.facebook.com/340122031113103/picture"/>
+<title>UpLoad Ảnh Miễn Phí By Thành PC</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<base >
+
+<link rel="stylesheet" href="styles/lib-2ac5f56489.css">
+
+<link rel="stylesheet" href="styles/app-db6087193f.css">
+</head>
+<body>
+    <div class="container-fluid pik-viewport">
+      <h1>Chọn Ảnh Cần Up</h1>
+        <button id="pik-image-select-button" class="btn btn-default">Chọn</button>
+         <div class="row">
+            <div class="col-md-4">
+                <div id="pik-status" class="hide pik-extra"></div>
+                  <div id="pik-quick-copy" class="hide pik-extra">
+                   <label for="pik-direct-link">Direct Link</label>
+                       <div class="input-group">
+                        <input id="pik-direct-link" type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" data-clipboard-target="pik-direct-link" disabled="disabled" class="pik-copy-button btn btn-default">:(</button>
+                        </span>
+                    </div>
+                    <label for="pik-forum-code">BBCode / Forums</label>
+                    <div class="input-group">
+                        <input id="pik-forum-code" type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" data-clipboard-target="pik-forum-code" disabled="disabled" class="pik-copy-button btn btn-default">:(</button>
+                        </span>
+                    </div>
+                    <label for="pik-common-mark">Markdown / Common Mark</label>
+                    <div class="input-group">
+                        <input id="pik-common-mark" type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" data-clipboard-target="pik-common-mark" disabled="disabled" class="pik-copy-button btn btn-default">:(</button>
+                        </span>
+                    </div>
+                </div>
+                <div id="pik-multiple" class="hide pik-extra">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="pik-tab active" link="pik-multiple-direct-link"><a href="#">Direct Link</a></li>
+                        <li role="presentation" class="pik-tab" link="pik-multiple-bbcode"><a href="#">BBCode</a></li>
+                        <li role="presentation" class="pik-tab" link="pik-multiple-markdown"><a href="#">Markdown</a></li>
+                    </ul>
+                    <textarea id="pik-multiple-direct-link" class="pik-container" wrap="off"></textarea>
+                    <textarea id="pik-multiple-bbcode" class="pik-container hide" wrap="off"></textarea>
+                    <textarea id="pik-multiple-markdown" class="pik-container hide" wrap="off"></textarea>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <canvas id="pik-original" class="pik-image img-rounded hide"></canvas>
+                <canvas id="pik-processed" class="pik-image img-rounded hide"></canvas>
+                <img id="pik-uploaded" class="pik-image img-rounded hide">
+            </div>
+        </div>
+        <input id="pik-file-input" class="hide">
+    </div>
+
+    <script src="scripts/lib-0be93fb29d.js"></script>
+
+    <script src="scripts/app-4b14fb69f7.js"></script>
+</body>
+</html>
